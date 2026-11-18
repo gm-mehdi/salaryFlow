@@ -1,0 +1,15 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["ES2022"],
+    "types": ["node"],
+    "outDir": "./dist",
+    "rootDir": ".",
+    "tsBuildInfoFile": "./.tsbuildinfo.server",
+    "paths": {
+      "@hatch/space-sdk": ["../vendor/space-sdk/src/index.ts"],
+      "@hatch/space-sdk/*": ["../vendor/space-sdk/src/*"]
+    }
+  },
+  "include": ["src/**/*", "../vendor/space-sdk/src/**/*"]
+}
