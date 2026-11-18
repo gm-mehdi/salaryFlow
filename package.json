@@ -36,6 +36,12 @@
     "tsx": "^4.23.15",
     "typescript": "^5.9.3"
   },
+  "browserslist": [
+    "chrome >= 92",
+    "firefox >= 90",
+    "safari >= 15",
+    "edge >= 92"
+  ],
   "pnpm": {
     "onlyBuiltDependencies": [
       "esbuild"

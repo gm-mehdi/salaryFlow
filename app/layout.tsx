@@ -1,7 +1,15 @@
 import type { Metadata, Viewport } from "next";
+import { Sora } from "next/font/google";
 import { Providers } from "./providers";
 import { PwaRegister } from "./pwa-register";
 import "./globals.css";
+
+const sora = Sora({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-sora",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "SalaryFlow",
@@ -28,7 +36,6 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
-  userScalable: false,
   colorScheme: "light dark",
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#0e6b5c" },
@@ -38,7 +45,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={sora.variable}>
       <body>
         <Providers>
           <div className="hatch-space-root" data-hatch-space-root="">

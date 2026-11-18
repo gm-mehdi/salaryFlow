@@ -1,0 +1,48 @@
+export const BUILT_IN_EXPENSE = [
+  "Housing",
+  "Groceries",
+  "Restaurants",
+  "Coffee",
+  "Transportation",
+  "Fuel",
+  "Shopping",
+  "Entertainment",
+  "Travel",
+  "Food delivery",
+  "Personal care",
+  "Utilities",
+  "Subscriptions",
+  "Health",
+  "Education",
+  "Other",
+];
+export const BUILT_IN_INCOME = ["Salary", "Freelance", "Bonus", "Side project", "Other income"];
+export const PAYMENT_METHODS = ["cash", "card", "bank transfer", "mobile payment", "other"];
+export const CURRENCIES = [
+  "MAD",
+  "USD",
+  "EUR",
+  "GBP",
+  "AED",
+  "SAR",
+  "CAD",
+  "AUD",
+  "CHF",
+  "JPY",
+  "INR",
+  "EGP",
+  "TND",
+  "DZD",
+];
+export const CAT_COLORS = [
+  "#0e6b5c",
+  "#e8a33d",
+  "#3e7cb1",
+  "#e4572e",
+  "#6a994e",
+  "#bc4749",
+  "#577590",
+  "#9c6644",
+  "#2a9d8f",
+  "#bc6c25",
+];
