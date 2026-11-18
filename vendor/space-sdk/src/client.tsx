@@ -1,13 +1,7 @@
 import { QueryClient } from "@tanstack/react-query";
 import type { ReactNode } from "react";
 import type { ActionsModule } from "./index";
-import type { z, ZodType } from "zod";
-
-type ActionDef = {
-  request: ZodType;
-  response: ZodType;
-  handler: (...args: never[]) => Promise<unknown>;
-};
+import type { z } from "zod";
 
 type ClientFromActions<T extends ActionsModule> = {
   [K in keyof T]: (
@@ -56,7 +50,7 @@ export const spaceQueryClient = new QueryClient({
   },
 });
 
-/** Visual stand-in for Muse's notch/safe-area scrim. */
+/** Notch / safe-area scrim for mobile installs. */
 export function SafeAreaTopScrim({
   backgroundColor = "transparent",
 }: {
@@ -78,6 +72,3 @@ export function SafeAreaTopScrim({
     />
   );
 }
-
-// Keep ActionDef referenced so TypeScript does not strip the import path in some configs.
-export type { ActionDef };

@@ -1,10 +1,6 @@
 node_modules/
-.bun-cache/
 .next/
 out/
-dist/
-client/dist/
-server/dist/
 data/
 *.db
 *.db-*
@@ -15,5 +11,3 @@ pnpm-debug.log*
 .env.local
 .env.*.local
 .neon
-.neon
-.env.local

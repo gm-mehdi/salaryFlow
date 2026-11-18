@@ -5,8 +5,7 @@
   "type": "module",
   "exports": {
     ".": "./src/index.ts",
-    "./client": "./src/client.tsx",
-    "./build": "./src/build.ts"
+    "./client": "./src/client.tsx"
   },
   "peerDependencies": {
     "@tanstack/react-query": "^5",

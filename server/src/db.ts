@@ -1,16 +1,12 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { config as loadEnv } from "dotenv";
 import { drizzle, type NodePgDatabase } from "drizzle-orm/node-postgres";
 import pg from "pg";
 import * as schema from "./schema";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "../..");
-
-loadEnv({ path: path.join(root, ".env.local") });
-loadEnv({ path: path.join(root, ".env") });
 
 function withPgSslCompat(url: string): string {
   const u = new URL(url);
